@@ -40,8 +40,6 @@ bool isValidCard(string cardNumber)
 
 string getCardType(string cardNumber)
 {
-    if (cardNumber.empty())
-        return "Unknown";
 
     if (cardNumber[0] == '4')
         return "Visa Card";
