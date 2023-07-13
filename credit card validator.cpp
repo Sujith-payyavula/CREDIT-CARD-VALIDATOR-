@@ -44,13 +44,13 @@ string getCardType(string cardNumber)
     if (cardNumber[0] == '4')
         return "Visa Card";
         
-    else if (cardNumber[0] == '5','2')
+    else if (cardNumber[0] == '5'|| cardNumber[0] == '2')
         return "Mastercard";
         
     else if (cardNumber[0] == '6')
         return "Rupay Card";
         
-    else if (cardNumber[0] == '3' && (cardNumber[1] == '4' || cardNumber[1] == '7'))
+    else if (cardNumber[0] == '3' && cardNumber[1] == '4' || cardNumber[1] == '7')
         return "American Express";
 
     return "Unknown";
